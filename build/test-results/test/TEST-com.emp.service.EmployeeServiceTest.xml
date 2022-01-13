@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.emp.service.EmployeeServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-01-12T15:07:04" hostname="krithik" time="0.453">
+  <properties/>
+  <testcase name="testEmployeeSection()" classname="com.emp.service.EmployeeServiceTest" time="0.407"/>
+  <testcase name="testoneEmployee()" classname="com.emp.service.EmployeeServiceTest" time="0.012"/>
+  <testcase name="testallEmployee()" classname="com.emp.service.EmployeeServiceTest" time="0.011"/>
+  <testcase name="testemployeeNotNull()" classname="com.emp.service.EmployeeServiceTest" time="0.011"/>
+  <testcase name="testGetMaxEmployee()" classname="com.emp.service.EmployeeServiceTest" time="0.011"/>
+  <system-out><![CDATA[20:37:04.568 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3d847dfa
+20:37:04.587 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+20:37:04.657 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.688 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.749 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+20:37:04.751 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+20:37:04.752 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+20:37:04.753 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+20:37:04.757 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+20:37:04.761 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeConfig'
+20:37:04.766 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeDao'
+20:37:04.778 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeService'
+20:37:04.783 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'section' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.785 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'max' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.825 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2811df25
+20:37:04.825 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+20:37:04.827 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.828 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.829 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+20:37:04.829 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+20:37:04.830 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+20:37:04.830 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+20:37:04.830 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+20:37:04.831 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeConfig'
+20:37:04.831 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeDao'
+20:37:04.832 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeService'
+20:37:04.832 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'section' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.833 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'max' in PropertySource 'class path resource [employee.properties]' with value of type String
+Employee{empId=2, empName='def', section='B'}
+20:37:04.837 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a44e5d3
+20:37:04.838 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+20:37:04.840 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.840 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.841 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+20:37:04.841 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+20:37:04.842 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+20:37:04.842 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+20:37:04.842 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+20:37:04.842 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeConfig'
+20:37:04.843 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeDao'
+20:37:04.844 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeService'
+20:37:04.844 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'section' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.844 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'max' in PropertySource 'class path resource [employee.properties]' with value of type String
+[Employee{empId=1, empName='abc', section='A'}, Employee{empId=2, empName='def', section='B'}, Employee{empId=3, empName='ghi', section='A'}, Employee{empId=4, empName='jkl', section='D'}]
+20:37:04.848 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@192cd65
+20:37:04.849 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+20:37:04.851 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.851 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.852 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+20:37:04.853 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+20:37:04.853 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+20:37:04.853 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+20:37:04.853 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+20:37:04.854 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeConfig'
+20:37:04.854 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeDao'
+20:37:04.855 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeService'
+20:37:04.855 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'section' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.856 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'max' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.859 [Test worker] DEBUG org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42ede1af
+20:37:04.860 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+20:37:04.862 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.862 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'env' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.863 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+20:37:04.863 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+20:37:04.863 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+20:37:04.863 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+20:37:04.864 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+20:37:04.864 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeConfig'
+20:37:04.865 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeDao'
+20:37:04.865 [Test worker] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'employeeService'
+20:37:04.866 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'section' in PropertySource 'class path resource [employee.properties]' with value of type String
+20:37:04.866 [Test worker] DEBUG org.springframework.core.env.PropertySourcesPropertyResolver - Found key 'max' in PropertySource 'class path resource [employee.properties]' with value of type String
+]]></system-out>
+  <system-err><![CDATA[Jan 12, 2022 8:37:04 PM org.emp.service.EmployeeServiceProxy getSect
+INFO: Calling setSect method
+Jan 12, 2022 8:37:04 PM org.emp.service.EmployeeServiceProxy getEmpId
+INFO: Calling service getEmpId:1
+Jan 12, 2022 8:37:04 PM org.emp.service.EmployeeServiceProxy getAll
+INFO: Calling service getAllEmployee
+Jan 12, 2022 8:37:04 PM org.emp.service.EmployeeServiceProxy getMaxEmployee
+INFO: Calling getMaxEmployee method
+]]></system-err>
+</testsuite>
