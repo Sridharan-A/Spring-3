@@ -1,9 +1,0 @@
-Ä22:08:06.304 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP POST http://localhost:8081/company/employee
-é22:08:06.313 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
-ù22:08:06.369 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Writing [Employee{empId=0, empName='fds', section='O'}] as "application/json"
-e22:08:06.393 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 202 ACCEPTED
-Å22:08:06.399 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP GET http://localhost:8081/company/employee/6
-}22:08:06.428 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
-_22:08:06.432 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
-r22:08:06.435 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [org.emp.core.Employee]
-.Employee{empId=6, empName='fds', section='O'}
