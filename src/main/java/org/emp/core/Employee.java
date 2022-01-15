@@ -2,6 +2,22 @@ package org.emp.core;
 
 public class Employee {
 
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+
+    public void setSect(String sect) {
+        this.sect = sect;
+    }
+
+    private int empId;
+    private String empName;
+    private String sect;
+
     public int getEmpId() {
         return empId;
     }
@@ -14,9 +30,7 @@ public class Employee {
         return sect;
     }
 
-    private int empId;
-    private String empName;
-    private String sect;
+
 
     public Employee() {
     }

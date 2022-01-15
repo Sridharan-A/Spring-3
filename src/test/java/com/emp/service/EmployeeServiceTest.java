@@ -26,7 +26,7 @@ public class EmployeeServiceTest {
     }
     @Test
     public void testoneEmployee(){
-        System.out.println(service.getEmpId(2));
+        System.out.println(service.get(2));
     }
     @Test
     public void testallEmployee(){
@@ -35,10 +35,19 @@ public class EmployeeServiceTest {
 
     @Test
     public void testEmployeeSection(){
-        assertEquals(service.getSect().size(),1);
+        assertEquals(service.getSect("A","abc").size(),1);
     }
     @Test
     public void testGetMaxEmployee(){
         assertEquals(service.getMaxEmployee().size(),4);
     }
+
+    @Test
+    public void testcontainsNameABC(){
+        assertEquals(service.getAll()
+                            .stream()
+                            .filter((a)->a.getEmpName().equalsIgnoreCase("abC")&&a.getEmpId()==1)
+                            .count(),1);
+    }
+
 }

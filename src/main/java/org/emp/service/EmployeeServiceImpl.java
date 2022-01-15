@@ -4,21 +4,21 @@ import org.emp.core.Employee;
 import org.emp.dao.EmployeeDao;
 import org.springframework.beans.factory.annotation.Value;
 
+import javax.inject.Named;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Collectors;
-
+@Named
 public class EmployeeServiceImpl implements EmployeeService {
 
     EmployeeDao employeeDao;
-
 
     public void setEmployeeDao(EmployeeDao employeeDao) {
         this.employeeDao = employeeDao;
     }
 
     @Override
-    public Employee getEmpId(int id) {
+    public Employee get(int id) {
         return employeeDao.getOne(id);
     }
 
@@ -29,7 +29,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Value("#{employeeDao.getAll().?[sect.equals('${section}')]}")
     Collection<Employee> employeeCollection =new ArrayList<Employee>();
-    public Collection<Employee> getSect(){
+    public Collection<Employee> getSect(String sect,String name){
         return employeeCollection;
     }
 
@@ -39,5 +39,20 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeDao.getAll().stream().limit(max).collect(Collectors.toList());
     }
 
+    @Override
+    public void add(Employee employee) {
+        if(employee.getEmpName()!=null &&employee.getSect()!=null){
+            employeeDao.add(employee);
+        }
+    }
+
+    @Override
+    public void deleteEmployee(int id) {
+        employeeDao.delete(id);
+    }
+
 
 }
+
+
+

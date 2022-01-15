@@ -9,9 +9,12 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
+
 
 @Configuration
-@PropertySource("classpath:employee.properties")
+//@PropertySource({"classpath:employee.properties"})
+@PropertySource({"classpath:application.yaml"})
 public class EmployeeConfig {
 
     @Bean(name = "employeeDao")
@@ -40,6 +43,5 @@ public class EmployeeConfig {
         employeeService.setEmployeeDao(employeeDao());
         return new EmployeeServiceProxy(employeeService);
     }
-
 
 }

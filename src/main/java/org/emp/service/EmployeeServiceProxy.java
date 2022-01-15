@@ -3,7 +3,6 @@ package org.emp.service;
 import org.emp.core.Employee;
 import org.springframework.beans.factory.annotation.Value;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -18,9 +17,9 @@ public class EmployeeServiceProxy implements EmployeeService {
     }
 
     @Override
-    public Employee getEmpId(int id) {
-        logger.info("Calling service getEmpId:1");
-        return service.getEmpId(id);
+    public Employee get(int id) {
+        logger.info("Calling service getEmpId");
+        return service.get(id);
     }
 
     @Override
@@ -31,9 +30,12 @@ public class EmployeeServiceProxy implements EmployeeService {
 
     @Value("${section}")
     String sect;
-    public Collection<Employee> getSect() {
+    public Collection<Employee> getSect(String sect,String name) {
         logger.info("Calling setSect method");
-        return service.getAll().stream().filter(emp -> emp.getSect().equals(sect)).collect(Collectors.toList());
+        return service.getAll().stream()
+                                .filter(emp -> emp.getSect().equals(sect))
+                                .filter(emp->emp.getEmpName().contains(name))
+                                .collect(Collectors.toList());
     }
 
     @Value("${max}")
@@ -41,5 +43,17 @@ public class EmployeeServiceProxy implements EmployeeService {
     public Collection<Employee> getMaxEmployee(){
         logger.info("Calling getMaxEmployee method");
         return service.getAll().stream().limit(max).collect(Collectors.toList());
+    }
+
+    @Override
+    public void add(Employee employee) {
+        if(employee.getEmpName()!=null && employee.getSect()!=null){
+            service.add(employee);
+        }
+    }
+
+    @Override
+    public void deleteEmployee(int id) {
+        service.deleteEmployee(id);
     }
 }
